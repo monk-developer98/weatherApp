@@ -1,5 +1,6 @@
 .section__descriptions {
     display: grid;
+    padding: 0 3px;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
@@ -33,5 +34,18 @@
     .section__descriptions {
 
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px){
+    .card small{
+        font-size: 2vh;
+    }
+    .card h2{
+        font-size: 1.7vh;
+    }
+    .section__descriptions{
+        gap: 1rem;
+        margin-top: 30px;
     }
 }

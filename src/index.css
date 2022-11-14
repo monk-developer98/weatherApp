@@ -11,14 +11,14 @@
 }
 
 .App {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
 }
 
 .overlay {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: var(--background-overlay);
 }
@@ -26,11 +26,11 @@
 .container {
   max-width: 800px;
   margin: auto;
-  height: 100%;
-
+  height: 100vh;
+  gap: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   padding: 1rem;
 }
@@ -94,4 +94,36 @@
 
 .temperature>h1 {
   font-size: 60px;
+}
+
+@media screen and (max-width:600px){
+  .container{
+    width: 100vw;
+    height: 100vh;
+    gap: 2rem;
+    
+  }
+  .section__inputs{
+    width: 90vw;
+  }
+  .section__inputs>input{
+    width: 50vw;
+  }
+  .section__inputs>button{
+    padding: 10px 30px;
+  }
+  .section__temperature{
+    width: 90vw;
+    height: 15vh;
+  }
+  
+  .icon img{
+    height: 8vh;
+  }
+  .icon h3{
+    font-size: 1.8vh;
+  }
+  .temperature h1{
+    font-size: 5vh;
+  }
 }
